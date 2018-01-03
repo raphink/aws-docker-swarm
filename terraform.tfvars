@@ -8,7 +8,7 @@ region="eu-west-1"
 application="SampleApp"
 
 # Set up a key pair in AWS and add the name here to allow SSH access to the instances
-key_name="MyKeyPair"
+key_name="rpinson"
 
 # Set the IP ranges from which to allow SSH access to the instances
 ssh_access=["0.0.0.0/0"]
