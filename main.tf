@@ -68,18 +68,18 @@ module "worker" {
 
 # Use autoscaling lifecycle rules to fire a lambda
 # to update our DNS record
-module "manager-auto-dns" {
-  source = "./modules/asg-lifecycle-lambda-update-dns"
-
-  name = "${ var.application }-swarm-manager-asg-dns"
-  application = "${ var.application }"
-  provisionersrc = "${ var.provisionersrc }"
-
-  group_names = ["${ module.manager.autoscaling-group-name }"]
-  zone_id = "${var.route53_zone_id}"
-  record = {
-    ttl = 300
-    name = "${var.domain}"
-    type = "A"
-  }
-}
+#module "manager-auto-dns" {
+#  source = "./modules/asg-lifecycle-lambda-update-dns"
+#
+#  name = "${ var.application }-swarm-manager-asg-dns"
+#  application = "${ var.application }"
+#  provisionersrc = "${ var.provisionersrc }"
+#
+#  group_names = ["${ module.manager.autoscaling-group-name }"]
+#  zone_id = "${var.route53_zone_id}"
+#  record = {
+#    ttl = 300
+#    name = "${var.domain}"
+#    type = "A"
+#  }
+#}

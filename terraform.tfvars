@@ -15,11 +15,11 @@ ssh_access=["0.0.0.0/0"]
 
 # If you want to use DNS to address groups of nodes in your swarm, you must add a Zone ID
 # or create a new one using terraform
-route53_zone_id="Z********"
+#route53_zone_id="Z********"
 
 # If you want to use DNS to address groups of nodes in your swarm, you must add a domain name
 # (root domain must be under the control of "route53_zone_id" added above)
-domain="app.mydomain.tld"
+#domain="app.mydomain.tld"
 
 # Set the instance type to use
 instance_type="t2.nano"

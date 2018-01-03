@@ -24,13 +24,13 @@ variable "key_name" {
     description = "The name of the Key Pair that can be used to SSH to each instance in the cluster"
 }
 
-variable "route53_zone_id" {
-    description = "The ID of the route 53 zone in which to create DNS entries"
-}
+#variable "route53_zone_id" {
+#    description = "The ID of the route 53 zone in which to create DNS entries"
+#}
 
-variable "domain" {
-    description = "The root domain name (including subdomain) to use for DNS records"
-}
+#variable "domain" {
+#    description = "The root domain name (including subdomain) to use for DNS records"
+#}
 
 variable "provisionersrc" {
     description = "The url of this repository"
